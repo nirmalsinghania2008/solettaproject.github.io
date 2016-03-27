@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga140a18dc1576934432b61cc579a3ced5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a rectangle term for a variable.  <a href="#ga140a18dc1576934432b61cc579a3ced5">More...</a><br/></td></tr>
 <tr class="separator:ga140a18dc1576934432b61cc579a3ced5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga28da0a48d50bdfda9de536128f71e577"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsml__fuzzy__term.html">sml_fuzzy_term</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Fuzzy__Engine.html#ga28da0a48d50bdfda9de536128f71e577">sml_fuzzy_variable_add_term_triangle</a> (struct <a class="el" href="structsml__object.html">sml_object</a> *sml, struct <a class="el" href="structsml__variable.html">sml_variable</a> *variable, const char *name, float vertex_a, float vertex_b, float vertex_c)</td></tr>
-<tr class="memdesc:ga28da0a48d50bdfda9de536128f71e577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a tirangle term for a variable.  <a href="#ga28da0a48d50bdfda9de536128f71e577">More...</a><br/></td></tr>
+<tr class="memdesc:ga28da0a48d50bdfda9de536128f71e577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a triangle term for a variable.  <a href="#ga28da0a48d50bdfda9de536128f71e577">More...</a><br/></td></tr>
 <tr class="separator:ga28da0a48d50bdfda9de536128f71e577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga083b261f9a13bb8e67abbbb6458fba12"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Fuzzy__Engine.html#ga083b261f9a13bb8e67abbbb6458fba12">sml_fuzzy_variable_get_default_term_width</a> (struct <a class="el" href="structsml__object.html">sml_object</a> *sml, struct <a class="el" href="structsml__variable.html">sml_variable</a> *<a class="el" href="structsml__variable.html">sml_variable</a>)</td></tr>
 <tr class="memdesc:ga083b261f9a13bb8e67abbbb6458fba12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default term width used by fuzzy to create terms.  <a href="#ga083b261f9a13bb8e67abbbb6458fba12">More...</a><br/></td></tr>
@@ -908,7 +908,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add a tirangle term for a variable. </p>
+<p>Add a triangle term for a variable. </p>
 <p>A triangle term uses is a mathematical function defined by 3 vertex (a, b c). For X coordinates between vertex a and b, function value is obtained by the linear function connecting points (vertex_a; 0) to (vertex_b; 1). In vertex_b, function value will 1.0 and from vertex_b to vertex_c, function value is obtained by the linear function connecting opints (vertex_b; 1.0) to (vertex_c; 0). For all other X values, the function value will be <code>zero</code>.</p>
 <dl class="section remark"><dt>Remarks</dt><dd>The term name can not contain spaces! </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
